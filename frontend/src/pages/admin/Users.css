@@ -1,0 +1,11 @@
+.users-search {
+  flex: 1;
+  min-width: 220px;
+  max-width: 360px;
+}
+
+.users-count {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-left: auto;
+}

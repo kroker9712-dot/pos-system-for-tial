@@ -1,0 +1,141 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--gradient-surface);
+}
+
+.admin-sidebar {
+  width: var(--sidebar-width);
+  background: var(--gradient-sidebar);
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.15);
+}
+
+.admin-brand {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.brand-mark {
+  display: block;
+  font-size: 1.375rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #60a5fa, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.brand-sub {
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6875rem 0.875rem;
+  border-radius: var(--radius-sm);
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 102, 255, 0.45);
+}
+
+.nav-link.active svg {
+  stroke: #fff;
+}
+
+.nav-pos {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1rem;
+}
+
+.admin-user {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
+}
+
+.user-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.user-role {
+  margin: 0.125rem 0 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+}
+
+.sign-out-btn {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.sign-out-btn:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 1.75rem 2rem;
+  overflow: auto;
+  max-width: 1400px;
+}
+
+.admin-sidebar .low-stock-pill {
+  margin: 0 0.5rem 1rem;
+  justify-content: center;
+}

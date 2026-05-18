@@ -1,0 +1,131 @@
+.new-user-page {
+  max-width: 720px;
+}
+
+.manager-role-banner {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, #e8f1ff 0%, #f0f9ff 100%);
+  border: 1px solid #93c5fd;
+  border-radius: var(--radius);
+}
+
+.manager-role-banner strong {
+  display: block;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.manager-role-banner p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.manager-role-icon {
+  font-size: 1.5rem;
+}
+
+.role-card.selected {
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, #e8f1ff 0%, #ffffff 100%);
+}
+
+.new-user-form {
+  padding: 1.5rem;
+}
+
+.form-section {
+  margin-bottom: 1.75rem;
+}
+
+.form-section h3 {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.role-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.role-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition);
+  background: var(--color-bg);
+}
+
+.role-card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.role-card.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.role-card-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.role-card-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.shop-note {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  padding: 0.75rem 1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+}
+
+.active-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.active-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+}
+
+.new-user-form .form-actions {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.25rem;
+  margin-top: 0;
+}
